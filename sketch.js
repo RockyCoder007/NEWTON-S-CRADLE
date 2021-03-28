@@ -15,7 +15,7 @@ function setup(){
     ball2=new Ball(160,350);
     ball3=new Ball(210,350);
     ball4=new Ball(260,350);
-    ball5=new Ball(400,320);
+    ball5=new Ball(310,350);
 
 
     
@@ -41,4 +41,10 @@ function draw(){
     cradle4.display();
     ball5.display();
     cradle5.display(); 
+
+}
+function keyPressed(){
+    if(keyCode===UP_ARROW){
+        Matter.Body.applyForce(ball5.body,ball5.body.position,{x:800,y:0})
+    }
 }

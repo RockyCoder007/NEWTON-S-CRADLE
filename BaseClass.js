@@ -3,7 +3,7 @@ class BaseClass{
         var options = {
             'restitution':0.8,
             'friction':0.98,
-            'density':5.0
+            'density':7.0
         }
         this.body = Bodies.circle(x,y,radius,options);
         this.radius=radius;
